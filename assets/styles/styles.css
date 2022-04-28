@@ -1,0 +1,391 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: url(sumit.jpg), no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the input container */
+.topnav .upload-container,
+.topnav .right {
+  float: right;
+}
+
+/* Style the input field inside the navbar */
+.topnav input[type=file] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+/* Style the button inside the input container */
+button {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  float: left;
+  cursor: pointer;
+}
+
+.topnav .upload-container button {
+  float: right;
+  background: #ddd;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+/* Add responsiveness - On small screens, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav .upload-container {
+    float: none;
+  }
+
+  .topnav a,
+  .topnav input[type=text],
+  .topnav .upload-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+
+  html,
+  body {
+    background: url(sumit.jpg), no-repeat;
+    background-position: center;
+  }
+}
+
+#downloadSection .heading {
+  letter-spacing: 10px;
+  word-spacing: 10px;
+  font-size: 50px;
+}
+
+#downloadSection .notes,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+#downloadSection .capnotes {
+  font-size: x-large;
+  word-spacing: 7px;
+  border: 1px solid black;
+}
+
+#downloadSection span {
+  font-size: 30px;
+}
+
+#downloadSection th {
+  padding: 15px;
+}
+
+#downloadSection td {
+  padding: 10px;
+
+}
+
+#downloadSection tr:nth-child(odd) {
+  background-color: #ccffff;
+}
+
+#downloadSection tr:hover:nth-child(odd) {
+  background-color: #ffff99;
+  cursor: pointer;
+}
+
+#downloadSection tr:hover:nth-child(even) {
+  background-color: #ffff99;
+  cursor: pointer;
+}
+
+#downloadSection .reference {
+  border-collapse: collapse;
+}
+
+#downloadSection .books {
+  font-size: x-large;
+  word-spacing: 5px;
+  border: 1px solid black;
+}
+
+#downloadSection .prequestion {
+  font-size: x-large;
+  word-spacing: 7px;
+  border: 1px solid black;
+}
+
+#downloadSection .question {
+  border-collapse: collapse;
+}
+
+#vertical-menu ul,
+li,
+nav,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+#vertical-menu a {
+  text-decoration: none;
+  font-family: helvetica;
+}
+
+
+
+#vertical-menu {
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  background: #2699FB;
+  margin-left: 20px;
+  margin-top: 25vh;
+}
+
+#vertical-menu .main-menu {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+#vertical-menu .main-menu li {
+  position: relative;
+  height: 50px;
+  box-shadow: 0 -1px 0 0 #444, 0 -2px 0 0 #222;
+}
+
+#vertical-menu .main-menu>li>a>i {
+  color: #2699FB;
+  width: 2em;
+  height: 100%;
+  line-height: 50px;
+  text-align: left;
+}
+
+#vertical-menu .main-menu>li:first-child,
+.submenu-1>li:first-child,
+.submenu-2>li:first-child,
+.submenu-3>li:first-child {
+  box-shadow: none;
+}
+
+#vertical-menu .main-menu>li:first-child>a,
+.submenu-1>li:first-child>a,
+.submenu-2>li:first-child>a,
+.submenu-3>li:first-child>a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#vertical-menu .main-menu>li:last-child>a,
+.submenu-1>li:last-child>a,
+.submenu-2>li:last-child>a,
+.submenu-3>li:last-child>a {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#vertical-menu .main-menu>li>a,
+.submenu-1>li>a,
+.submenu-2>li>a,
+.submenu-3>li>a {
+  color: #2699FB;
+  background: #2a2a2a;
+  line-height: 50px;
+  display: block;
+  padding: 0 1em;
+
+}
+
+#vertical-menu .submenu-1,
+.submenu-2,
+.submenu-3 {
+  position: absolute;
+  white-space: nowrap;
+  top: -9999px;
+}
+
+#vertical-menu .contain-submenu>a:first-child::after {
+  content: " \f054";
+  padding-left: 1em;
+  font-family: 'FontAwesome';
+}
+
+/* revealing submenus */
+#vertical-menu .main-menu>li:hover .submenu-1,
+.submenu-1>li:hover .submenu-2,
+.submenu-2>li:hover .submenu-3 {
+  top: 0;
+  left: 100%;
+  transition: top .5s cubic-bezier(0.380, 0.820, .790, .930);
+
+}
+
+#vertical-menu .main-menu>li:hover>a {
+  color: #22af70;
+}
+
+#vertical-menu .submenu-1 li:hover>a {
+  color: #22a7f0;
+}
+
+#vertical-menu .submenu-2 li:hover>a {
+  color: #f6db7f;
+}
+
+#vertical-menu .submenu-3 li:hover>a {
+  color: #f2784b;
+}
+
+#vertical-menu li {
+  list-style: none;
+}
+
+/*#vertical-menu html, body{
+  background: url(https://images.unsplash.com/photo-1501349800519-48093d60bde0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0b33dfe1da4ccca6ca490194d9fcc0ea&auto=format&fit=crop&w=750&q=80);  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    background-size: cover;
+}
+*/
+
+/*login part*/
+#lg1 {
+
+
+  height: 550px;
+  width: 40%;
+  border-radius: 70%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5);
+
+
+
+}
+
+#lg1 input {
+  width: 300px;
+  height: 25px;
+  color: white;
+  border: none;
+  outline: none;
+  padding-left: 5px;
+  border-bottom: 1px solid grey;
+  background: transparent;
+  font-size: 13px;
+
+}
+
+#lg1 .abc {
+  margin-right: 20px;
+}
+
+#lg1 form {
+  font-size: 20px;
+  color: white;
+
+}
+
+#lg1 a {
+  color: white;
+  padding-right: 280px;
+  font-size: 20px;
+}
+
+#lg1 .i1 {
+  height: 120px;
+  width: 228px;
+  border-radius: 50%;
+  padding-top: 0.1px;
+
+
+}
+
+#lg1 div>h1 {
+  font-size: 35px;
+}
+
+#lg1 button {
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 100px;
+  background: #9AFF33;
+  color: black;
+  font-size: 13px;
+  border-radius: 20px;
+  margin-left: 40%;
+
+
+
+
+}
+
+#lg1 button:hover {
+  /*background-color: tomato;*/
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+
+/*//////////////////////////////sign up form/////////////////////////////////////////////////////////////*/
