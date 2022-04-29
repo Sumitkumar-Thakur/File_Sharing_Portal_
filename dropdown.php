@@ -121,9 +121,9 @@ include_once 'header.php';
       </li>
       <li class="contain-submenu"><a href="#"><i class="fa fa-graduation-cap"></i>OTHER </a>
         <ul class="submenu-1">
-          <li><a href="#">ME</a>
+          <li><a href="#">UPDATES</a>
 
-          <li><a href="#">PhD</a>
+          <li><a href="#">NOTICES</a>
 
 
           </li>
