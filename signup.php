@@ -48,7 +48,7 @@
       var l = document.getElementById('lastname').value;
       var u = document.getElementById('user').value;
       var p = document.getElementById('pass').value;
-
+      var p2 = document.getElementById('pass2').value;
 
 
 
@@ -69,11 +69,12 @@
         document.getElementById('message').innerHTML = "** Firstname contains only alphabets";
         return false;
       }
-
+      document.getElementById('message').innerHTML = "";
 
       if (l == "") {
         document.getElementById('message0').innerHTML = "** Please fill the Lastname.";
         return false;
+
       }
       if (l.length < 3) {
         document.getElementById('message0').innerHTML = "** Lastname range is 3 to 20.";
@@ -87,7 +88,7 @@
         document.getElementById('message0').innerHTML = "** Lastname contains only alphabets";
         return false;
       }
-
+      document.getElementById('message0').innerHTML = "";
       if (u == "") {
         document.getElementById('message1').innerHTML = "** Please fill the username.";
         return false;
@@ -104,16 +105,21 @@
         document.getElementById('message1').innerHTML = "** username contains only alphabets";
         return false;
       }
-
+      document.getElementById('message1').innerHTML = "";
 
       if (p == "") {
         document.getElementById('message2').innerHTML = "** Please fill the password.";
         return false;
       }
-      // if (p.length < 9) {
-      //document.getElementById('message2').innerHTML = "** Password range is  minimum 8 characters";
-      //return false;
-      //}
+      if (p.length < 7) {
+        document.getElementById('message2').innerHTML = "** Password range is  minimum 8 characters";
+        return false;
+      }
+      if (p2 != p) {
+        document.getElementById('message2').innerHTML = "** Password did not match";
+        return false;
+      }
+      document.getElementById('message2').innerHTML = "";
       //if (p.length > 20) {
       //document.getElementById('message2').innerHTML = "** password range is 3 to 20.";
       //return false;
